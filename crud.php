@@ -60,7 +60,7 @@ unset($_SESSION['message']);
                 <td><?php echo $row['domain'];?></td>
                 <td><?php echo $row['aliases'];?></td>
                 <td>
-                  <a href="truc.php?edit=<?php echo $row['id']; ?>"
+                  <a href="crud.php?edit=<?php echo $row['id']; ?>"
                     class="btn btn-info">Modifier</a>
                     <a href="process.php?delete=<?php echo $row['id'];?>"
                       class="btn btn-danger">Supprimer</a>

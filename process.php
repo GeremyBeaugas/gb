@@ -41,7 +41,7 @@ if(isset($_POST['submit-search'])){
         <td><?php echo $row['domain'];?></td>
         <td><?php echo $row['aliases'];?></td>
         <td>
-          <a href="truc.php?edit=<?php echo $row['id']; ?>" class="btn btn-info">Edit</a>
+          <a href="crud.php?edit=<?php echo $row['id']; ?>" class="btn btn-info">Edit</a>
           <a href="process.php?delete=<?php echo $row['id'];?>" class="btn btn-danger">Delete</a>
         </td>
       </tr>
@@ -68,7 +68,7 @@ if(isset($_POST['save'])){
   $_SESSION['message']= "Enregistrement effectué";
   $_SESSION['msg_type']="success";
 
-  header("location: truc.php");
+  header("location: crud.php");
 }
 
 if(isset($_GET['delete'])){
@@ -78,7 +78,7 @@ if(isset($_GET['delete'])){
   $_SESSION['message']= "Enregistrement supprimé";
   $_SESSION['msg_type']="danger";
 
-  header("location: truc.php");
+  header("location: crud.php");
 
 }
 
@@ -104,7 +104,7 @@ if(isset($_POST['update'])){
   $_SESSION['message'] = "L'enregistrement a été mis à jour";
   $_SESSION['msg_type'] = "warning";
 
-  header('location: truc.php');
+  header('location: crud.php');
 }
 
 
